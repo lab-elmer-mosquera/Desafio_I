@@ -86,3 +86,6 @@ CMakeLists.txt.user*
 
 # Obsidian
 .obsidian/
+
+# Papelera
+.trash
