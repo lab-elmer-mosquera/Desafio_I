@@ -1,0 +1,1 @@
+Usar el algomitmo de Bloder para dectar la ficha
