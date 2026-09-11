@@ -6,3 +6,5 @@ Operaciones para mover la ficha:
 bit_inicial = índice × 3 
 byte = bit_inicial / 8 
 offset = bit_inicial % 8
+
+

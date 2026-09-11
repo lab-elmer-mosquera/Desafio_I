@@ -47,7 +47,7 @@ Durante la partida se puede:
 Estas operaciones reorganizan físicamente la memoria del tablero (no solo
 lógicamente), ver ADR de gestión de memoria.
 
-## Estado del juego (a trackear)
+## Estado del juego (a trackear o hacer seguimiento)
 - Dimensiones actuales del tablero
 - Cantidad de eliminaciones hechas por el usuario
 - Cantidad total de fichas eliminadas
