@@ -1,3 +1,50 @@
+---
+tipo: vision
+id: VA-DESAFIO-1
+status: Borrador          # Borrador | Activa | Superada
+naturaleza: Proyecto Academico
+---
+
+Antes de tocar una sola línea de C++, quiero que nos pongamos de acuerdo en algo: este desafío no es un problema que hay que resolver, es un conjunto de decisiones que todavía no hemos tomado y que van a perseguirnos durante tres semanas.
+
+Porque este desafío se puede resolver de muchas formas correctas. Lo que lo vuelve un problema serio no es llegar a una solución — es poder defender, dentro de un mes, delante del profesor, por qué elegimos esta y no otra. Y esa defensa no se improvisa en la sustentación. Se construye desde el primer día.
+
+## Palabras clave
+
+- Match-3
+- Bits
+- Byte
+
+## A: Representación obligatoria de las fichas
+
+| Código | Significado    |
+| ------ | -------------- |
+| 000    | Posición vacía |
+| 001    | # (35)         |
+| 010    | & (38)         |
+| 011    | @ (64)         |
+| 100    | ) (41)         |
+| 101    | = (61)         |
+| 110    | % (36)         |
+| 111    | NADA ESPECIAL  |
+
+La primera decisión de implementación consistió en asignar el patrón `000` para la posición vacía, esto en consideracion de las siguientes ventajas operativas:
+
+- **Facilidad de limpieza:** Permite inicializar o vaciar tramas de memoria aplicando máscaras de ceros mediante operadores `&amp;` y `~` de forma directa.
+- **Relleno por defecto:** Cuando el tablero se crea o se desplazan fichas por gravedad, los huecos generados asumen naturalmente el valor nulo (`000`)
+
+Por lo demás el documento exige que las fichas sean **identificables de manera inequívoca** en pantalla, y decidimos quedarnos con los caractes en la tabla anterior (`#`, `&;`, `@`, `)`, `=`, `%`) porque:
+
+- Son caracteres ASCII imprimibles estándar (de 1 byte cada uno para renderizado en consola)
+- Poseen densidad visual y contraste adecuado en la terminal para identificar emparejamientos de 3 o más fichas iguales.
+
+## Representación obligatoria del tablero.
+
+Esta es de las primeras cosas que debemos desarrollar debido a que no hacerlo implica trabajar a ciegas, por lo tanto, pausó un momento la documentación para experimentar. (rama spike se adjuntará posteriormente).
+## Resumen
+
+El desafio actual, asocia su jugabilidad con un juego llamado **Sweet Crush**, sin embargo, es un proyecto académico muy diferentente , donde el reto radica en almacenar y manipular cada casilla usando exactamente 3 bits dentro de una secuencia continua de memoria dinámica, sin el uso de clases, structs ni la librería STL. La solución debe ser capaz de traducir coordenadas de filas y columnas a posiciones exactas de bits (incluso si estos quedan divididos entre dos bytes), procesar eliminaciones y reacomodos automáticos en cadena de códigos idénticos, y redimensionar físicamente la memoria al insertar o borrar filas y columnas intermedias
+
 # Sweet Crush — Descripción del producto
 
 ## Qué es

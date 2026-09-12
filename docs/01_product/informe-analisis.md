@@ -15,7 +15,8 @@ proyecto: Sweet Crush (Desafío I)
 
 ## 📑 Índice
 1. [Contextualización y Entorno de Trabajo](#1-contextualización-y-entorno-de-trabajo)
-2. [Análisis del Problema y Consideraciones](## 2. Análisis del Problema y Consideraciones)
+2. [De qué se trata el proyecto](#2-de-qué-se-trata-el-proyecto)
+2. [Análisis del problema y consideraciones](#3-análisis-del-problema-y-consideraciones)
 
 ---
 
@@ -91,4 +92,3 @@ Estas aclaraciones resolvieron dudas que habíamos dejado abiertas sobre las fro
 ## 4. Conclusiones
 
 Hasta aquí llega el informe preliminar. Con las dudas de la sesión del 8 resueltas, el equipo se encuentra, mediante DOMER, definiendo la estructura del proyecto y los primeros documentos de arquitectura y requisitos. Ese trabajo excede el alcance del informe y corresponde a la metodología de implementación y seguimiento que adoptamos como parte de nuestra formación.
-
